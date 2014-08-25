@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Ludum Dare Game</title>
+    <script type="text/javascript" src="libs/head.load.min.js"></script>
+    <script>
+        window.head.load("libs/crafty.js", 
+                         "level.js", 
+                         "players.js", 
+                         "bullets.js", 
+                         "main.js"
+                     );
+    </script>
+  </head>
+  <body style="background: #000000">
+    <div id="game" style="border: solid 1px #FFFFFF; margin: 48px auto 0 auto"></div>
+    
+    <script>
+        head.ready(function () {
+            LDGame.init();
+        });
+     </script>
+  </body>
+</html>
